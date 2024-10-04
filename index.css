@@ -75,3 +75,38 @@ body{
 	background-image: url('./images/bg.png');
 	color: white;
 }
+
+
+#categories h2 {
+    margin-bottom: 2rem;
+}
+
+.list-group-item {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    margin-bottom: 0.75rem;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #444; 
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    color: black;
+}
+
+.btn-warning:hover {
+    background-color: #d6931a;
+    border-color: #d6931a;
+}
+
+
+@media (max-width: 768px) {
+    .list-group-item {
+        font-size: 0.9rem; 
+    }
+}
