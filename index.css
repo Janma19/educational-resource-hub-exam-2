@@ -24,12 +24,6 @@ body{
 	color: white;
 }
 
-
-.video-container {
-    width: 80%; 
-    max-width: 1200px; 
-}
-
 .video-container {
     position: absolute;
     top: 0;
@@ -38,7 +32,6 @@ body{
     height: 100%;
     overflow: hidden;
     z-index: 1;
-    opacity: 0.5;
 }
 
 .video-container .video {
@@ -46,14 +39,28 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: 1;
+    opacity: 0.5;
+}
+
+.btn-warning {
+    background-color: #f0ad4e;
+    border-color: #f0ad4e;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-warning:hover {
+    background-color: #d6931a;
+    border-color: #d6931a;
 }
 
 #introduction {
     position: relative;
     z-index: 2 !important; 
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.5); 
     color: white;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .content {
@@ -66,5 +73,5 @@ body{
 
 #mission {
 	background-image: url('./images/bg.png');
-	filter: grayscale(100%);
+	color: white;
 }

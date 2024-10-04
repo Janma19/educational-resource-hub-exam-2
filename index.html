@@ -43,25 +43,29 @@
 	<!-- Home Section -->
 	<!-- Hero Section -->
 	<section>
-		<div id="home" class="home container-fluid" >
+		<div id="home" class="home container-fluid position-relative" >
 			<div class="row">
 				<div class="col-lg-12">
-					<div id="introduction" class=" bg-secondary border border-primary rounded bs-warning-border-subtle p-5 m-5">
+					<div id="introduction" class=" bg-secondary border border-primary rounded bs-warning-border-subtle p-5 m-5 position-relative text-center text-light">
 						<div class="video-container text-center">
-                        <video autoplay loop class="video" playsinline>
+                        <video autoplay muted loop class="video" playsinline>
                             <source src="./videos/hero.mp4" type='video/mp4' id='mp4'>
                         </video>
                     	</div>
-						<h1 class="text-center text-warning fw-bold">Welcome to EduHub</h1>
-						<p class="text-center fst-italic">Where knowledge is just a spell away!</p>
-						<p class=" lead text-center">
+                    	<div class="content position-relative">
+						<h1 class="text-center text-warning fw-bold display-4 mb-4">Welcome to EduHub</h1>
+						<p class="fst-italic mb-3">Where knowledge is just a spell away!</p>
+						<p class=" lead mb-4">
 						Whether you're a Muggle or a wizard, Edu Hub offers a rich library of courses that will have you acing exams faster than you can say<span class="fst-italic text-warning"> Wingardium Leviosa.</span> At Edu Hub, every subject is a new adventure. From Potions (Chemistry) to Transfiguration (Mathematics), we've got lessons for every curious mind. So grab your wand, quill, or just your laptop, and let’s make learning magical!</p>
+
+						<a href="#courses" class="btn btn-warning btn-lg fw-bold">Explore Courses</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Featured Section -->
 	<section>
 		<div class="container-fluid">
@@ -188,7 +192,7 @@
                             <label for="contactMessage" class="form-label">Message</label>
                             <textarea class="form-control" id="contactMessage" rows="3"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="btn btn-warning">Send</button>
                     </form>
 					</div>
 					<div class="col-md-6 mb-4">
