@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap Link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+	<!-- CSS link -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>Educational Resource Hub</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+	  <div class="container-fluid">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <a class="navbar-brand" href="#">EduHub</a>
+	    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#categories-section">Categories</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#about">About</a>
+	      </ul>
+	    </div>
+	    <button onclick="myFunction()" type="button" id="" class="btn btn-dark rounded-circle dark-mode">◐</button>
+	  </div>
+	</nav>
+
+	<!-- Home Section -->
+	<!-- Hero Section -->
+	<section>
+		<div id="home" class="home container-fluid" >
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="introduction" class=" bg-secondary border border-primary rounded bs-warning-border-subtle p-5 m-5">
+						<div class="video-container text-center">
+                        <video autoplay loop class="video" playsinline>
+                            <source src="./videos/hero.mp4" type='video/mp4' id='mp4'>
+                        </video>
+                    	</div>
+						<h1 class="text-center text-warning fw-bold">Welcome to EduHub</h1>
+						<p class="text-center fst-italic">Where knowledge is just a spell away!</p>
+						<p class=" lead text-center">
+						Whether you're a Muggle or a wizard, Edu Hub offers a rich library of courses that will have you acing exams faster than you can say<span class="fst-italic text-warning"> Wingardium Leviosa.</span> At Edu Hub, every subject is a new adventure. From Potions (Chemistry) to Transfiguration (Mathematics), we've got lessons for every curious mind. So grab your wand, quill, or just your laptop, and let’s make learning magical!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Featured Section -->
+	<section>
+		<div class="container-fluid">
+			<h2 class="text-center mb-3 text-warning fw-bold"> Featured Resources </h2>
+			<div class="row m-5 ">
+			  <div class="col-sm-6 mb-3 mb-sm-0 ">
+			    <div id="featured" class="card ">
+			      <div class="card-body">
+			      	<img src="./images/feature1.png" class="img-fluid mb-3">
+			        <h5 class="card-title fw-bold">Potions & Chemistry</h5>
+			        <p class="card-text fst-italic">Brew potions (or mix chemicals) like Professor Snape! A fun way to learn chemistry through potion-like experiments.</p>
+			        <p>Category: Alchemy & Chemistry</p>
+			        <p>Resource Type: Lab Manual</p>
+			        <p>Duration: 8 Lessons</p>
+			        <p>Level: Beginner</p>
+			        <a href="#" class="btn btn-warning">Wands at the ready!</a>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="col-sm-6">
+			    <div class="card">
+			      <div class="card-body">
+			      	<img src="./images/feature2.png" class="img-fluid mb-3">
+			        <h5 class="card-title fw-bold">The Art of Spell Writing (Creative Writing)</h5>
+			        <p class="card-text fst-italic">Harness the power of words and craft enchanting stories. This course dives into writing spells, incantations, and magical narratives.</p>
+			        <p>Category: Literature & Magic</p>
+			        <p>Resource Type: E-book</p>
+			        <p>Duration: 12 Chapters</p>
+			        <p>Level: All Levels</p>
+			        <a href="#" class="btn btn-warning">Wands at the ready!</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Categories Section -->
+	<section>
+		<div id="categories-section" class="container-fluid categories-section">
+			<h2 class="text-center text-warning fw-bold"> Categories </h2>
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="categories" class="p-5">
+						<ul class="list-group">
+						 	<li class="list-group-item d-flex justify-content-between align-items-center" id="resources">
+						 		Alchemy & Chemistry
+                            <a href="#" class="btn btn-sm btn-warning">Learn More</a>
+                        	</li>
+                        	<li class="list-group-item d-flex justify-content-between align-items-center" id="resources">
+						 		Literature & Magic
+                            <a href="#" class="btn btn-sm btn-warning">Learn More</a>
+                        	</li>
+                        	<li class="list-group-item d-flex justify-content-between align-items-center" id="resources">
+						 		Philosophy & Ethics
+                            <a href="#" class="btn btn-sm btn-warning">Learn More</a>
+                        	</li>
+                        	<li class="list-group-item d-flex justify-content-between align-items-center" id="resources">
+						 		Magic & Science
+                            <a href="#" class="btn btn-sm btn-warning">Learn More</a>
+                        	</li>
+                        	<li class="list-group-item d-flex justify-content-between align-items-center" id="resources">
+						 		History of Magic & World Civilizations
+                            <a href="#" class="btn btn-sm btn-warning">Learn More</a>
+                        	</li>
+                        	<li class="list-group-item d-flex justify-content-between align-items-center" id="resources">
+						 		Zoology & Magical Creatures
+                            <a href="#" class="btn btn-sm btn-warning">Learn More</a>
+                        	</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section>
+		<div id="about" class="about container-fluid" >
+			<div class="row">
+				<div class="col-lg-12">
+					<div id="mission" class=" border-primary rounded bs-warning-border-subtle p-5 m-5">
+						<h2 class="text-center text-warning fw-bold">About Us</h2>
+						<p class="text-center fst-italic text-info">"Where Learning Meets Magic!"</p>
+						  <p class="text-justify mt-3 fw-bold">
+						    At EduHub, we believe that education should be as exciting as a game of Quidditch and as enlightening as Dumbledore’s wisdom. 
+						    Whether you're a Muggle or a wizard, a first-year student or a seasoned professor, our goal is to provide a magical learning experience for everyone.
+						  </p>
+						  <p class="text-justify fw-bold">
+						    With courses ranging from *Potions & Chemistry* to *Defense Against the Dark Arts* (a.k.a. Critical Thinking), we offer a wide array of resources to help you 
+						    ace your exams faster than you can say <span class="fst-italic text-warning">Accio Knowledge!</span> Our expert instructors and enchanted library ensure that 
+						    your academic journey is filled with fun, discovery, and a bit of magic along the way.
+						  </p>
+						  <p class="text-justify fw-bold">
+						    So whether you're here to master *Transfiguration* or to perfect your *Spell Writing* skills, EduHub is your one-stop destination for all things knowledge and wizardry. 
+						    Together, let’s make learning as enchanting as a trip to Hogwarts!
+						  </p>
+						  <p class="text-center mt-4 fw-bold">
+						    <span class="fst-italic text-warning">"Happiness can be found even in the darkest of times, if one only remembers to turn on the light."</span><br>
+						    <span class="text-info">- Albus Dumbledore</span>
+						  </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section>
+		<div class="about container-fluid" >
+			<div class="row">
+				<div class="col-md-6 mb-4 contact">
+					<h2 class="fw-bold">Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+					</div>
+					<div class="col-md-6 mb-4">
+                    <h2 class="fw-bold">Find Us</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d243647.71122457655!2d-74.0059413!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1655419723961!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Bootstrap Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<!-- JS link -->
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
